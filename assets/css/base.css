@@ -249,13 +249,19 @@ a#navigation-toggle.active {
 header#main-head {
   background-color: #f44336;
   color: #fff;
-  padding: 96px 32px 64px 64px;
+  padding: 24px 32px 24px 64px;
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,.2);
   z-index: 2;
   position: fixed;
   transition: padding 200ms ease-in-out;
-  min-height: 205px;
+}
+
+@media screen and (min-width: 500px) {
+  header#main-head {
+    min-height: 205px;
+    padding: 96px 32px 64px 64px;
+  }
 }
 
 .post-template header#main-head {
@@ -381,7 +387,13 @@ ul.sub-nav li a.account {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 203px;
+  padding-top: 86px;
+}
+
+@media screen and (min-width: 500px) {
+  .content {
+    padding-top: 203px;
+  }
 }
 
 ul.sample-content {
