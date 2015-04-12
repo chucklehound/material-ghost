@@ -332,13 +332,18 @@ ul.sub-nav li a.account {
 .card, .post, .author-profile {
   background-color: #fafafa;
   border: 1px solid #d3d6dd;
-  box-shadow: 0 1px 0 #dee0e6;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 4px;
   padding: 24px 12px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .card, .post, .author-profile {
     padding: 24px 36px;
+    margin: 4px 0;
   }
 }
 
