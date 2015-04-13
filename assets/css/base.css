@@ -35,6 +35,13 @@ a {
 
 p {
   line-height: 1.4em;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1em;
+  }
 }
 
 a:hover {
@@ -104,7 +111,8 @@ blockquote {
   line-height: 1.3em;
   border-left: 2px solid #03A9F4;
   padding-left: 24px;
-  margin: 24px 0;
+  margin: 32px 0;
+  font-style: italic;
 }
 
 /* Site styles */
@@ -117,7 +125,7 @@ nav.main-nav {
   position: fixed;
   top: 0;
   z-index: 300;
-  box-shadow: 1px 0 3px #727272;
+  box-shadow: 1px 0 3px rgba(50, 50, 50, 0.5);
   -webkit-transform: translate(-300px,0);
 }
 
@@ -257,7 +265,7 @@ header#main-head {
   transition: padding 200ms ease-in-out;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header#main-head {
     min-height: 205px;
     padding: 96px 32px 64px 64px;
@@ -284,7 +292,7 @@ header#main-head h4 {
   font-weight: normal;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   header#main-head {
     font-size: 90%;
   }
@@ -395,7 +403,7 @@ ul.sub-nav li a.account {
   padding-top: 86px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .content {
     padding-top: 203px;
   }
@@ -447,16 +455,34 @@ nav.pagination {
 }
 
 .post-content * {
-  margin: 12px 0;
+  margin: 24px 0;
+}
+
+.post-content blockquote {
+  margin: 32px 0;
 }
 
 .post-content img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 700px) {
+  .post-content img {
+    max-width: 120%;
+    margin-left: -10%;
+    box-shadow: 0 2px 4px rgba(72,72,72,.3);
+  }
+}
+
 h1.post-title {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 700px) {
+  h1.post-title {
+    font-size: 3em;
+  }
 }
 
 .site-footer {
