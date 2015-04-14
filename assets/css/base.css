@@ -127,6 +127,9 @@ nav.main-nav {
   z-index: 300;
   box-shadow: 1px 0 3px rgba(50, 50, 50, 0.5);
   -webkit-transform: translate(-300px,0);
+  -ms-transform: translate(-300px,0);
+  -moz-transform: translate(-300px,0);
+  transform: translate(-300px,0);
 }
 
 nav.main-nav ul {
